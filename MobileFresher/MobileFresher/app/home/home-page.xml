@@ -1,0 +1,27 @@
+<Page id="home"
+    class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
+
+    <ActionBar class="action-bar">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android
+        because ActionItems are shown on the right side of the ActionBar
+        -->
+       
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the
+        NavigationButton as a side-drawer button in iOS is not possible,
+        because its function is to always navigate back in the application.
+        -->
+       
+        <Label class="action-bar-title" text="Welcome"></Label>
+    </ActionBar>
+
+    <StackLayout class="page-content">
+        <Image src="~/images/UOM.png" horizontal-alignment="center" height="50%" width="50%"></Image>
+        <Label class="page-placeholder" text="University of Mauritius"></Label>
+	<Button text="Login" class="btn btn-primary btn-active" tap="GoLogin"></Button>
+	<Button text="SignUp" class="btn btn-primary btn-active" tap="GoSignup"></Button>
+    </StackLayout>
+</Page>

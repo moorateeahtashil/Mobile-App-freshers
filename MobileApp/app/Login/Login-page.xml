@@ -1,0 +1,25 @@
+<Page navigatingTo="onNavigatingTo" class="page" xmlns:sd="nativescript-ui-sidedrawer" 
+    xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <ActionBar title="RadSideDrawer " class="action-bar" >  <ActionItem tap="toggleDrawer" ios.systemIcon="4" android.systemIcon="ic_menu_btn_add" ios.position="left" /></ActionBar>
+     	<sd:RadSideDrawer id="sideDrawer">
+	     <sd:RadSideDrawer.drawerContent>
+            <StackLayout class="sidedrawer-left">
+                <StackLayout class="sidedrawer-content">
+			<Button text="Home" tap="goHome" />
+                    <Label text="Home" class="sidedrawer-list-item-text" />
+                    <Label text="Basics" class="sidedrawer-list-item-text" />
+                    <Label text="Options" class="sidedrawer-list-item-text" />
+                    <Label text="Help" class="sidedrawer-list-item-text" />
+                    <Label text="Advanced" class="sidedrawer-list-item-text" />
+                </StackLayout>
+            </StackLayout>
+        </sd:RadSideDrawer.drawerContent>
+	
+    <sd:RadSideDrawer.mainContent>
+            
+                
+		
+           
+        </sd:RadSideDrawer.mainContent>
+</sd:RadSideDrawer>
+</Page>
